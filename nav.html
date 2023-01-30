@@ -15,21 +15,23 @@
 </head>
 <body>
   <header>
-    <div class="logo" >
-      logo
-    </div>
-  
-    <nav class="header__navbar" id="header-nav">
-      <ul>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
-
-    <button class="header__menu-icon" id="hamburger-btn">
-      <div class="header__menu-icon__middle"></div>
-    </button>
+    <div class="container">
+        <div class="logo" >
+          logo
+        </div>
+      
+        <nav class="header__navbar" id="header-nav">
+          <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+    
+        <button class="header__menu-icon" id="hamburger-btn">
+          <div class="header__menu-icon__middle"></div>
+        </button>
+    </div> 
   </header>
 
   <main>
@@ -51,11 +53,26 @@
       </section>
 
       <section class="intro padding-top-bottom">
-        <div class="text--center">
+        <div class="intro--text text--center">
           <h2 class="heading">Nektar Stern</h2>
           <p class="text ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos commodi quidem ut quos sequi esse sunt error veritatis eligendi officiis deserunt animi fugiat consequatur, placeat quod ullam quia quae ipsa.</p>
         </div>
-        
+
+        <div class="small-hero"></div>
+      </section>
+
+      <section class="products padding-top-bottom text--center">
+        <h2 class="heading">
+          Our products
+        </h2>
+
+        <div class="products__container container">
+          <div class="products__single">
+              <img class="products__img" src="" alt="">
+              <h3 class="products__name"></h3>
+              <p class="text"></p>
+          </div>
+        </div>
       </section>
 
 
@@ -74,9 +91,14 @@
           </a>
         </div>
       </section>
-
   </main>
 
+
+  <footer>
+    <div class="container">
+
+    </div>
+  </footer>
 
   <script src="./scripts/modules/MobileMenu.js"></script>
   <footer></footer>
