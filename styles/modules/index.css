@@ -263,18 +263,46 @@ header a {
     margin: 15px 0;
 }
 
-
-@media screen and (min-width:550px) {
-
-}
-
-/*INTRO*/
-.intro {
+.flex-row--evenly {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 }
 
-.intro .intro--text {
-    max-width: 90%;
+.flex-row--space {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.flex-row--cented {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--centerd {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.footer__container {
+    
+}
+
+.footer__info {
+    margin: 10px 15px;
+}
+
+
+
+
+
+
+

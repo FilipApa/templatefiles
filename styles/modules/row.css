@@ -1,0 +1,16 @@
+.flex-row {
+    display: flex;
+    align-items: center;
+
+    &--evenly {
+        justify-content: space-evenly;
+    }
+
+    &--space {
+        justify-content: space-between;
+    }
+
+    &--centered {
+        justify-content: center;
+    }
+}

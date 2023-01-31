@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/modules/mobilemenu.css">
+  <link rel="stylesheet" href="./styles/modules/index.css">
 </head>
 <body>
   <header>
@@ -36,6 +36,12 @@
 
   <main>
       <section class="large-hero large-hero--home">
+          <picture>
+            <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+            <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+            <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+            <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Coastal view of ocean and mountains" class="large-hero__image">
+          </picture>
           <div class="large-hero__text-container">
             <h1 class="heading">
               Products from Serbia
@@ -94,11 +100,55 @@
   </main>
 
 
-  <footer>
+  <footer class="footer">
     <div class="container">
+        <div class="footer__container">
+          <div class="footer__info">
+            <div class="footer__logo">
+              LOGO
+            </div>
+            <p class="footer__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit?
+            </p>
 
+            <div class="footer__newsletter">
+              <form class="flex-col"   action="">
+                <label class="footer__heading" for="email-newsletter" >Newsletter</label>
+                <input class="footer__input" type="email" name="email-newsletter" id="email-newsletter" placeholder="Email">
+                <button class="footer__btn btn" type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="flex-row--evenly">
+            <div class="footer__info">
+              <h4 class="footer__heading">
+                Pages
+              </h4>
+  
+              <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer__info">
+                <h4 class="footer__heading">
+                  Adress
+                </h4>
+    
+                <ul>
+                  <li>Street</li>
+                  <li>City, Country</li>
+                  <li>Zip</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          
     </div>
   </footer>
 
   <script src="./scripts/modules/MobileMenu.js"></script>
-  <footer></footer>
