@@ -311,6 +311,7 @@ header a {
 .footer__logo {
     font-weight: 700;
     font-size: 25px;
+    margin-bottom: 25px !important;
 }
 
 .footer__info {

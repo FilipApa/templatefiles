@@ -1,16 +1,91 @@
-.flex-row {
+.flex {
     display: flex;
-    align-items: center;
-
-    &--evenly {
+  
+    &__col {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    &__col--centered {
+      justify-content: center;
+    }
+  
+  
+    &__row {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+  
+    &__row--even {
         justify-content: space-evenly;
     }
-
-    &--space {
+  
+    &__row--space {
         justify-content: space-between;
     }
-
-    &--centered {
+  
+    &__row--center {
+        align-items: center;
         justify-content: center;
     }
-}
+  
+    &__row--align-center {
+      align-items: center;
+    }
+  
+    &__row--2 > div{
+  
+      @mixin atMedium {
+        width: 50%;
+        padding: 3rem 2rem;
+      }
+  
+      @mixin atLarge {
+        padding: 3.5rem 2.5rem;
+      }
+  
+      @mixin atLarger {
+        padding: 4.5rem 3.5rem;
+      }
+      
+    }
+  
+    &__row--3 {
+      @mixin atSmall {
+        width: 33%;
+        padding: 2.5rem 1.5rem;
+      }
+  
+      @mixin atMedium {
+        padding: 3rem 2rem;
+      }
+  
+      @mixin atLarge {
+        padding: 3.5rem 2.5rem;
+      }
+  
+      @mixin atLarger {
+        padding: 4.5rem 3.5rem;
+      }
+    }
+  
+    &__row--4 {
+      @mixin atSmall {
+        width: 33%;
+        padding: 2.5rem 1.5rem;
+      }
+  
+      @mixin atMedium {
+        padding: 3rem 2rem;
+      }
+  
+      @mixin atLarge {
+        padding: 3.5rem 2.5rem;
+      }
+  
+      @mixin atLarger {
+        padding: 4.5rem 3.5rem;
+      }
+    }
+  }
